@@ -4,7 +4,7 @@ module "sandbox" {
   control_tower_parameters = {
     AccountEmail              = "root2code.poc+sandbox@gmail.com"
     AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "AFT Management"
+    ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "root2code.poc+sandbox@gmail.com"
     SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "AFT"
@@ -24,4 +24,7 @@ module "sandbox" {
   }
 
   account_customizations_name = "sandbox"
+
+  account-request-table      = "aft-request"
+  account-request-table-hash = "id"
 }
